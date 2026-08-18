@@ -1,4 +1,4 @@
-﻿// Dynamic base path for images - handles both local and GitHub Pages
+// Dynamic base path for images - handles both local and GitHub Pages
 const basePath = window.location.pathname.includes('/Alan-Khalaf-cv/') 
     ? '/Alan-Khalaf-cv/images/' 
     : './images/';
@@ -12,6 +12,7 @@ const translations = {
         school1: "Al Furat University",
         degree2: "Educational Qualification Diploma",
         school2: "Syrian Virtual University",
+        techSkillTitle: "Technical Skills",
         expTitle: "Expertise",
         exp1: "Distribution Monitoring",
         exp2: "Registration & Data Management",
@@ -24,8 +25,25 @@ const translations = {
         lang2: "Arabic",
         lang3: "Kurdish",
         profileTitle: "Profile",
-        profileText: "Experienced humanitarian professional specialized in registration, distribution management, and data accuracy within complex camp environments. Strong background in protection-sensitive case handling, beneficiary data verification, and inter-agency coordination.",
+        profileText: "Front-end developer specialized in building modern, responsive websites and web applications using React.js, TypeScript, and Tailwind CSS, alongside extensive experience spanning over 6 years in humanitarian work inside refugee camps with international organizations such as Blumont and UNHCR. I combine advanced technical skills with field experience in data management, distribution, and protection, enabling me to deliver innovative digital solutions for the humanitarian sector. Passionate about continuous learning and quick to adopt new technologies.",
+        projectsTitle: "Projects",
+        proj1: "Personal Portfolio Website",
+        proj2: "E-Commerce Store",
+        proj3: "Hospital Website",
+        proj4: "Real Estate Company",
+        proj5: "Tourism Platform",
+        proj6: "Restaurant Website",
+        proj7: "Interactive React Web App (FlowPilot AI)",
+        certTitle: "Certificates & Courses",
+        cert1Name: "Front-End Development Certificate",
+        cert1Provider: "Hsoub Academy | Professional certificate in web design and development",
         workTitle: "Work Experience",
+        job0Company: "Freelance",
+        job0Date: "2026 - Present",
+        job0Role: "Freelance Front-End Developer",
+        job0d1: "Developing modern, responsive websites and web applications using React.js, JavaScript, TypeScript, and Tailwind CSS with a focus on performance and user experience.",
+        job0d2: "Designing and implementing professional user interfaces for diverse projects, including an e-commerce store and a personal portfolio website.",
+        job0d3: "Using modern tools such as Vite, Webpack, GSAP, and Three.js to create dynamic, high-quality visual experiences.",
         job1Company: "Blumont - Al Hol Camp",
         job1Role: "Distribution Assistant",
         job1d1: "Managed and verified beneficiary distribution lists to prevent duplication and ensure fair assistance.",
@@ -51,6 +69,10 @@ const translations = {
         job4d2: "Entered and updated beneficiary data in the official database with high accuracy.",
         job4d3: "Performed re-verification exercises to reflect changes in family composition and location.",
         job4d4: "Cross-checked records to prevent duplication and maintain data integrity.",
+        job5Company: "Syria - Al Hassakah",
+        job5Role: "English Teacher",
+        job5d1: "Taught English language to students at various grade levels with a focus on grammar, reading, writing, listening, and speaking skills.",
+        job5d2: "Prepared lesson plans, tests, and educational activities, and evaluated student performance while tracking their academic progress.",
         skillTitle: "Skills",
         skill1: "Protection during distribution",
         skill2: "Computer skills in programming and web design",
@@ -66,6 +88,7 @@ const translations = {
         school1: "جامعة الفرات",
         degree2: "دبلوم تأهيل التربوي",
         school2: "الجامعة الافتراضية السورية",
+        techSkillTitle: "المهارات التقنية",
         expTitle: "الخبرات",
         exp1: "الاشراف ومراقبة عمليات التوزيع",
         exp2: "التسجيل وإدارة البيانات",
@@ -78,8 +101,25 @@ const translations = {
         lang2: "العربية",
         lang3: "الكردية",
         profileTitle: "نبذة شخصية",
-        profileText: "أخصائي إنساني متمرس ومتخصص في عملية التسجيل وإدارة التوزيع وتدقيق البيانات ضمن بيئات المخيمات المعقدة. خلفية قوية في التعامل مع الحالات الحساسة للحماية، والتحقق من بيانات المستفيدين، والتنسيق بين الوكالات.",
+        profileText: "مطور واجهات أمامية متخصص في بناء مواقع وتطبيقات ويب حديثة ومتجاوبة باستخدام React.js وTypeScript وTailwind CSS، إلى جانب خبرة واسعة تمتد لأكثر من 6 سنوات في العمل الإنساني داخل مخيمات اللاجئين مع منظمات دولية مثل Blumont وUNHCR. أجمع بين المهارات التقنية المتقدمة والخبرة الميدانية في إدارة البيانات والتوزيع والحماية، مما يمكنني من تقديم حلول رقمية مبتكرة للقطاع الإنساني. أمتلك شغفاً بالتعلم المستمر وسرعة في استيعاب التقنيات الجديدة.",
+        projectsTitle: "المشاريع",
+        proj1: "موقع أعمال شخصي (Portfolio)",
+        proj2: "متجر إلكتروني",
+        proj3: "موقع مشفى",
+        proj4: "شركة عقارية",
+        proj5: "منصة سياحية",
+        proj6: "موقع مطعم",
+        proj7: "تطبيق ويب تفاعلي React (FlowPilot AI)",
+        certTitle: "الشهادات والدورات",
+        cert1Name: "شهادة تطوير الواجهات الأمامية (Front-End Development)",
+        cert1Provider: "أكاديمية حسوب (Hsoub Academy) | شهادة احترافية في تصميم وتطوير مواقع الويب",
         workTitle: "الخبرة العملية",
+        job0Company: "مستقل (Freelance)",
+        job0Date: "2026 - الآن",
+        job0Role: "مطور واجهات أمامية مستقل",
+        job0d1: "تطوير مواقع وتطبيقات ويب حديثة ومتجاوبة باستخدام React.js وJavaScript وTypeScript وTailwind CSS مع التركيز على الأداء وتجربة المستخدم.",
+        job0d2: "تصميم وتنفيذ واجهات مستخدم احترافية لمشاريع متنوعة تشمل متجراً إلكترونياً وموقع أعمال شخصي (Portfolio).",
+        job0d3: "استخدام أدوات حديثة مثل Vite وWebpack وGSAP وThree.js لإنشاء تجارب بصرية ديناميكية وعالية الجودة.",
         job1Company: "بلومونت - مخيم الهول",
         job1Role: "مساعد توزيع",
         job1d1: "إدارة وتحقق من قوائم توزيع المستفيدين لمنع التكرار وضمان المساعدة العادلة.",
@@ -105,6 +145,10 @@ const translations = {
         job4d2: "إدخال وتحديث بيانات المستفيدين في قاعدة البيانات الرسمية بدقة عالية.",
         job4d3: "إجراء انشطة إعادة التحقق لتعكس التغييرات في تكوين الأسرة والموقع.",
         job4d4: "التحقق من السجلات لمنع التكرار والحفاظ على سلامة البيانات.",
+        job5Company: "سوريا - الحسكة",
+        job5Role: "مدرس لغة إنجليزية",
+        job5d1: "تدريس اللغة الإنجليزية لطلاب المراحل المختلفة مع التركيز على قواعد اللغة وتنمية مهارات القراءة والكتابة والاستماع والمحادثة.",
+        job5d2: "إعداد الخطط الدراسية والاختبارات والأنشطة التعليمية وتقييم مستوى الطلاب ومتابعة تقدمهم الأكاديمي.",
         skillTitle: "المهارات",
         skill1: "الحماية أثناء التوزيع",
         skill2: "مهارات الحاسوب في البرمجة وتصميم مواقع الويب",
@@ -130,6 +174,7 @@ function setLang(lang) {
     document.getElementById('school1').textContent = t.school1;
     document.getElementById('degree2').textContent = t.degree2;
     document.getElementById('school2').textContent = t.school2;
+    document.getElementById('tech-skill-title').textContent = t.techSkillTitle;
     document.getElementById('exp-title').textContent = t.expTitle;
     document.getElementById('exp1').textContent = t.exp1;
     document.getElementById('exp2').textContent = t.exp2;
@@ -143,7 +188,24 @@ function setLang(lang) {
     document.getElementById('lang3').textContent = t.lang3;
     document.getElementById('profile-title').textContent = t.profileTitle;
     document.getElementById('profile-text').textContent = t.profileText;
+    document.getElementById('projects-title').textContent = t.projectsTitle;
+    document.getElementById('proj1').textContent = t.proj1;
+    document.getElementById('proj2').textContent = t.proj2;
+    document.getElementById('proj3').textContent = t.proj3;
+    document.getElementById('proj4').textContent = t.proj4;
+    document.getElementById('proj5').textContent = t.proj5;
+    document.getElementById('proj6').textContent = t.proj6;
+    document.getElementById('proj7').textContent = t.proj7;
+    document.getElementById('cert-title').textContent = t.certTitle;
+    document.getElementById('cert1-name').textContent = t.cert1Name;
+    document.getElementById('cert1-provider').textContent = t.cert1Provider;
     document.getElementById('work-title').textContent = t.workTitle;
+    document.getElementById('job0-company').textContent = t.job0Company;
+    document.getElementById('job0-date').textContent = t.job0Date;
+    document.getElementById('job0-role').textContent = t.job0Role;
+    document.getElementById('job0-d1').textContent = t.job0d1;
+    document.getElementById('job0-d2').textContent = t.job0d2;
+    document.getElementById('job0-d3').textContent = t.job0d3;
     document.getElementById('job1-company').textContent = t.job1Company;
     document.getElementById('job1-role').textContent = t.job1Role;
     document.getElementById('job1-d1').textContent = t.job1d1;
@@ -169,6 +231,10 @@ function setLang(lang) {
     document.getElementById('job4-d2').textContent = t.job4d2;
     document.getElementById('job4-d3').textContent = t.job4d3;
     document.getElementById('job4-d4').textContent = t.job4d4;
+    document.getElementById('job5-company').textContent = t.job5Company;
+    document.getElementById('job5-role').textContent = t.job5Role;
+    document.getElementById('job5-d1').textContent = t.job5d1;
+    document.getElementById('job5-d2').textContent = t.job5d2;
     document.getElementById('skill-title').textContent = t.skillTitle;
     document.getElementById('skill1').textContent = t.skill1;
     document.getElementById('skill2').textContent = t.skill2;
@@ -393,7 +459,7 @@ const carouselData = {
                     description: 'Completed comprehensive web design training at Hsoub Academy covering HTML, CSS, JavaScript, responsive design, and modern web development practices.',
                     image: './images/hsoub.png'
                 }
-                
+
             ],
             ar: [
                 {
@@ -584,13 +650,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         const modal = document.getElementById('carouselModal');
         if (modal && modal.classList.contains('active')) {
+            const isRtl = document.documentElement.dir === 'rtl';
             if (e.key === 'ArrowRight') {
                 e.preventDefault();
-                nextSlide();
+                isRtl ? prevSlide() : nextSlide();
             }
             if (e.key === 'ArrowLeft') {
                 e.preventDefault();
-                prevSlide();
+                isRtl ? nextSlide() : prevSlide();
             }
             if (e.key === 'Escape') {
                 closeCarousel();
