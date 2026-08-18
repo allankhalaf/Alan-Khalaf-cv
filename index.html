@@ -418,27 +418,41 @@
 
     <!-- Carousel Modal -->
     <div id="carouselModal" class="carousel-modal">
-        <div class="carousel-content">
-            <button class="close-carousel" onclick="closeCarousel()">&times;</button>
-            <div class="carousel-header">
-                <h2 id="carouselTitle">Carousel</h2>
-                <div class="carousel-counter" id="carouselCounter">1 / 1</div>
-                <div class="carousel-note" id="carouselNote">Use arrows to navigate slides</div>
+    <div class="carousel-content">
+
+        <!-- زر الإغلاق -->
+        <button class="close-carousel" onclick="closeCarousel()">&times;</button>
+
+        <div class="carousel-header">
+            <h2 id="carouselTitle">Carousel</h2>
+
+            <div class="carousel-counter" id="carouselCounter">
+                1 / 1
             </div>
-            <div class="carousel-body">
-                <div class="carousel-slides">
-                    <div id="carouselSlides"></div>
-                </div>
-                <button class="carousel-nav prev" onclick="prevSlide()">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-nav next" onclick="nextSlide()">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+
+            <div class="carousel-note" id="carouselNote">
+                Use arrows to navigate slides
             </div>
-            <div class="carousel-indicators" id="carouselIndicators"></div>
         </div>
+
+        <div class="carousel-body">
+            <div class="carousel-slides">
+                <div id="carouselSlides"></div>
+            </div>
+
+            <button class="carousel-nav prev" onclick="prevSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <button class="carousel-nav next" onclick="nextSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+
     </div>
+</div>
 
     <script src="index.js"></script>
 </body>
