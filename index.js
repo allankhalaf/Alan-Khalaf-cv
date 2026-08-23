@@ -290,7 +290,7 @@ const translations = {
         carouselNote: "Use arrows to navigate slides"
     },
     ar: {
-        name: "الان عبدالعزيز خلف",
+        name: "آلان عبدالعزيز خلف",
         location: "سوريا ، الحسكة",
         headerGreeting: "مرحباً، أنا",
         eduTitle: "التعليم",
@@ -384,7 +384,7 @@ const translations = {
         courseTitle: "الدورات",
         course1: "دورة تصميم مواقع الويب في أكاديمية حاسوب",
         contactTitle: "تواصل معي",
-        contactText: "مهتم بالتعاون أو لديك مشروع في mind؟ لا تتردد في التواصل.",
+        contactText: "مهتم بالتعاون أو لديك مشروع في عقلك لا تتردد في التواصل.",
         emailMe: "ارسل بريد",
         whatsappMe: "راسلني واتساب",
         btnViewWork: "عرض أعمالي",
@@ -396,7 +396,7 @@ const translations = {
         navExperience: "الخبرة",
         navProjects: "المشاريع",
         navContact: "تواصل",
-        footerText: " الان عبدالعزيز خلف. جميع الحقوق محفوظة.",
+        footerText: " آلان عبدالعزيز خلف. جميع الحقوق محفوظة.",
         loaderText: "جاري التحميل",
         viewAllText: "عرض كل المشاريع",
         carouselNote: "استخدم الأسهم للتنقل بين الشرائح"
